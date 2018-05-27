@@ -1,4 +1,4 @@
-# Your code goes here!
+require "pry"
 class Anagram
 attr_accessor :tester
 
@@ -9,7 +9,7 @@ attr_accessor :tester
 
   def match(array)
   a = @tester.select do |x| x.split("").sort == array.split("").sort
-
+binding.pry
   end
   a
   end
