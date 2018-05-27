@@ -11,7 +11,6 @@ attr_accessor :tester
   @tester.select do |x| x.split("").sort == array.split("").sort
 binding.pry
   end
-  a
   end
 
 end
