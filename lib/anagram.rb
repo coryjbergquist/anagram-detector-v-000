@@ -8,7 +8,7 @@ attr_accessor :tester
   end
 
   def match(array)
-  a = @tester.select do |x| x.include?(array)
+  a = @tester.select do |x| x.split("").sort == array.split("").sort
 
   end
   a
