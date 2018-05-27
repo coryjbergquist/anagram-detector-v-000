@@ -1,10 +1,12 @@
 require "pry"
 class Anagram
 attr_accessor :tester
-binding.pry
+
   def initialize(name)
     @tester = name
     @tester
+
+    binding.pry
   end
 
   def match(array)
