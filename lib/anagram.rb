@@ -8,8 +8,8 @@ attr_accessor :tester
   end
 
   def match(array)
-    binding.pry
-  @tester.select do |x| x.split("").sort == array.split("").sort
+
+    array.select do |word| word.split("").sort == @tester.sort
 binding.pry
   end
   end
